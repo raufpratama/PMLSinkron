@@ -1,6 +1,8 @@
 package com.example.lenovo.androidmysql;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +21,8 @@ public class RegisterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_layout);
+
+
         nama = (EditText)findViewById(R.id.et_name);
         judul = (TextView)findViewById(R.id.judulform);
         username_register = (EditText)findViewById(R.id.et_username_register);
@@ -35,16 +39,25 @@ public class RegisterActivity extends Activity {
         bt_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                name = nama.getText().toString();
-                uname_regist = username_register.getText().toString();
-                upass_regist = password_register.getText().toString();
-                nomor_telp = nomor_telp_register.getText().toString();
-                str_email = email.getText().toString();
+                if(cekEditText()) {
+                    name = nama.getText().toString();
+                    uname_regist = username_register.getText().toString();
+                    upass_regist = password_register.getText().toString();
+                    nomor_telp = nomor_telp_register.getText().toString();
+                    str_email = email.getText().toString();
+                }
                 String method = "register";
                 BackgroundWork bgwk = new BackgroundWork(getApplicationContext());
                 bgwk.execute(method, name, uname_regist, upass_regist,nomor_telp,str_email);
                 finish();
             }
         });
+    }
+
+    public boolean cekEditText() {
+        if(nama.getText().length()!= 0 && username_register.getText().length() != 0 && password_register.getText().length() != 0 && nomor_telp_register.getText().length() != 0 && email.getText().length() != 0) {
+            return true;
+        }
+        return true;
     }
 }

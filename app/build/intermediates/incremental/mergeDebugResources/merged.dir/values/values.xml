@@ -104,6 +104,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="abuabu">#dcdcdc</color>
     <color name="abuabugelap">#b7b7b7</color>
+    <color name="abumuda">#f7f7f7</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
@@ -112,6 +113,7 @@
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="birugelap">#0077ff</color>
     <color name="biruhijautua">#00737e</color>
+    <color name="birutua">#004696</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -150,6 +152,7 @@
     <color name="hijaugelapsikit">#00c1cf</color>
     <color name="hijautosca">#59a687</color>
     <color name="hitam">#000</color>
+    <color name="hitammuda">#4c4c4c</color>
     <color name="ic_launcher_background">#006FD9</color>
     <color name="kuning">#ede600</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -272,6 +275,7 @@
         </attr><attr format="boolean" name="behavior_hideable"/><attr format="boolean" name="behavior_skipCollapsed"/></declare-styleable>
     <declare-styleable name="ButtonBarLayout"><attr format="boolean" name="allowStacking"/></declare-styleable>
     <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/><attr format="color" name="civ_circle_background_color"/></declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/><attr format="dimension" name="scrimVisibleHeightTrigger"/><attr format="integer" name="scrimAnimationDuration"/><attr name="collapsedTitleGravity">
             
             <flag name="top" value="0x30"/>
@@ -783,11 +787,12 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">AndroidMySQL</string>
+    <string name="app_name">Pick My Laundry</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="hakcipta">Copyrights 2018 © By Ebola.inc All Right Reserved</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -1977,6 +1982,15 @@
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
     <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Spinner"/>
+    <style name="PutihTextInputLayout" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/putih</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/putih</item>
+        <item name="colorControlNormal">@color/putih</item>
+        <item name="colorControlActivated">@color/putih</item>
+    </style>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">

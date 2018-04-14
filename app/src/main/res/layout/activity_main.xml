@@ -63,10 +63,11 @@
         android:layout_marginTop="25dp"
         android:layout_below="@id/tvforgotpass"
         android:text="L O G I N"
+        android:foreground="?attr/selectableItemBackground"
         android:layout_centerHorizontal="true"
         android:onClick="prosesLogin"
         android:background="@drawable/buttonlogin"
-        android:textColor="@color/hijautosca"/>
+        android:textColor="@color/birugelap"/>
     
     <Button
         android:textColor="@color/putih"
@@ -75,6 +76,7 @@
         android:id="@+id/button_signup"
         android:text="S I G N  U P"
         android:layout_below="@id/button_login"
+        android:foreground="?attr/selectableItemBackground"
         android:background="@drawable/buttonsignup"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
@@ -88,4 +90,6 @@
         android:textColor="@color/putih"
         android:textSize="10dp"
         android:layout_marginBottom="15dp"/>
+
+
 </RelativeLayout>

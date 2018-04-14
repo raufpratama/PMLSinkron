@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MainUIActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainUIActivity" />
+        <activity android:name=".MainRegisterActivity" />
+        <activity android:name=".Main_Ui_Fragment_Activity"></activity>
     </application>
 
 </manifest>

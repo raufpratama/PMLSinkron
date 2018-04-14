@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundbot2greyed"
+    tools:context="com.example.lenovo.androidmysql.MenuProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar_profile"
+        app:navigationIcon="@drawable/ic_previous"
+        android:background="@color/abumuda"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="Profile"
+            android:textColor="@color/hitammuda"
+            />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/fragmentprofile_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@drawable/bg_profile"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_picture"
+            android:id="@+id/circle_image_profile_picutre"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_user_full_name"
+            android:text="Muhammad Rauf Pratama"
+            android:textColor="@color/putih"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pratamarauf8@gmail.com"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/putih"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonsignup"
+            android:id="@+id/bt_edit_profile"
+            android:text="Edit Profile"
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="@color/putih"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/fragmentprofile_linear_layout">
+
+        <EditText
+            android:id="@+id/et_alamat_user"
+            android:enabled="false"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="7dp"
+            android:textColor="@color/abuabugelap"
+            android:text="STM. Jln Suka Tani No. 4c Medan"
+            android:drawableLeft="@drawable/ic_alamat"/>
+
+        <EditText
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:enabled="false"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/abuabugelap"
+            android:text="+6281363160534"
+            android:drawableLeft="@drawable/ic_phone_black"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="18"
+        android:minSdkVersion="23"
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -27,6 +27,8 @@
         </activity>
         <activity android:name="com.example.lenovo.androidmysql.RegisterActivity" />
         <activity android:name="com.example.lenovo.androidmysql.MainUIActivity" />
+        <activity android:name="com.example.lenovo.androidmysql.MainRegisterActivity" />
+        <activity android:name="com.example.lenovo.androidmysql.Main_Ui_Fragment_Activity" />
 
         <meta-data
             android:name="android.support.VERSION"
